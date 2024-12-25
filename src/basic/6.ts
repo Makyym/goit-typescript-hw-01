@@ -2,7 +2,10 @@ interface IUSer {
     name: string;
     ahe: number;
     email: string;
-    address?: object;
+    address?: {
+        city: string;
+        country: string;
+    };
 }
 
 const mango = {

@@ -9,6 +9,7 @@ const page1 = {
     }
 };
 
+
 const page2 = {
     title: 'Python or Js',
     likes: 5,
@@ -21,5 +22,8 @@ type Page = {
     likes: number;
     accounts: [...string[]];
     status: string;
-    details?: object;
+    details?: {
+        createAt: string;
+        updateAt: string;
+    };
 };
